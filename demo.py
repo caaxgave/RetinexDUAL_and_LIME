@@ -20,7 +20,7 @@ def main(args):
     images = [cv2.imread(file) for file in files]
 
     # create save directory
-    directory = join(imdir, "enhanced")
+    directory = join(args.folder_save, "enhanced")
     if not exists(directory):
         makedirs(directory)
 
@@ -42,6 +42,8 @@ if __name__ == "__main__":
     )
     parser.add_argument("-f", '--folder', default='./demo/', type=str,
                         help="folder path to test images.")
+    parser.add_argument("-fs", '--folder_save', default='./demo/', type=str,
+                        help="folder path to save images.")
     parser.add_argument("-g", '--gamma', default=0.6, type=float,
                         help="the gamma correction parameter.")
     parser.add_argument("-l", '--lambda_', default=0.15, type=float,
