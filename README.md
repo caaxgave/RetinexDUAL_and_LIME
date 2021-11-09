@@ -25,6 +25,8 @@ optional arguments:
   -h, --help            show this help message and exit
   -f FOLDER, --folder FOLDER
                         folder path to test images.
+  -fs FOLDER_SAVE, --folder_save FOLDER_SAVE 
+                        folder path to enhanced images.                     
   -g GAMMA, --gamma GAMMA
                         the gamma correction parameter.
   -l LAMBDA_, --lambda_ LAMBDA_
